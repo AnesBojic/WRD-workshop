@@ -1,0 +1,401 @@
+
+.city-weather-header{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(83, 81, 81);
+}
+
+.city-weather{
+    background-color: rgba(210, 205, 205, 0.236);
+    padding-bottom: 50px;
+}
+.city-weather-wrapper{
+    padding-top: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.propeller{
+    width:70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    animation: rotacija linear;
+    animation-iteration-count: infinite;
+}
+.city-card{
+    border-radius: 15px;
+    border-top: 4px solid rgb(132, 188, 0);
+    border-left: 4px solid rgb(132, 188, 0);
+    width: 22%;
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(199,185,199,1);
+-moz-box-shadow: 10px 10px 5px -8px rgba(199,185,199,1);
+box-shadow: 10px 10px 5px -8px rgba(199,185,199,1);
+margin-bottom: 10px;
+background-color: white;
+}
+.city-name{
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    font-weight: lighter;
+    font-size:xx-large;
+    color: rgb(83, 81, 81);
+}
+.city-card-right{
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    gap:50px
+}
+.temp{
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Lucida Handwriting;
+    font-size: small;
+    color: rgb(132, 188, 0);
+}
+#svg-div{
+    margin-left: 20px;
+}
+.wind-vel{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: small;
+    font-family: Lucida Handwriting;
+    color: rgb(132, 188, 0);
+}
+.city-card-wrapper{
+    position: relative;
+    top:20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+#contact-form {
+    margin: 20px 0;
+    margin-top: 0;
+    padding-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form .container2 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#contact-form .item {
+    width: 50%;
+}
+
+#contact-form .item:nth-of-type(2n+2) {
+    margin-left: 20px;
+}
+
+#contact-form label {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 5px 0;
+    font-family: Comic Sans MS;
+}
+
+#contact-form input {
+    font-family: Comic Sans MS;
+    width: 100%;
+    padding: 7px;
+}
+
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+}
+
+#contact-form .button {
+    width: 150px;
+    background-color:red;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    box-shadow: 3px 3px 10px 1px rgba(227, 227, 227, 0.7);
+    padding: 10px;
+    margin: 20px 0;
+}
+
+#contacts {
+    margin-top: 40px;
+}
+
+#contacts .contacts-container2 {
+    width: 80%;
+}
+
+#contacts .contacts-title {
+    color: #3E3F40;
+    border-bottom: 1px solid #D3D3D3;
+    margin-top: 20px;
+}
+
+#contacts i {
+    position: relative;
+    /**/
+    top: 20px;
+    /**/
+    color: #00B2A9;
+    font-weight: bold;
+}
+
+#contacts p {
+    padding-left: 25px;
+    /**/
+}
+.item-container{
+    width: 100%;
+    display: flex;
+}
+.conact{
+    background-color: rgb(132, 188, 0);;
+    background-size: cover;
+    padding-top: 20px;
+}
+.booking-header{
+    text-align: center;
+    color: white;
+}
+@keyframes rotacija{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 600px){
+    
+}
+
+/*Nas kod*/
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header
+{
+    background-image: url(/images/background.png);
+    background-size:cover;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-left:10%;
+    margin-right:10%;
+    
+}
+
+.nav-items
+{
+    color: white;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding-top: 20px;
+}
+
+.nav-items li
+{
+    display: inline-flex;
+    padding: 10px;
+}
+
+.register-button
+{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+#home
+{
+    color: red;
+}
+
+.header-content
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+}
+
+.header-description
+{
+    width: 13%;
+    color: white;
+    margin-top: 200px;
+   
+}
+
+.header-description p
+{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+
+.get-started-button
+{
+    background-color: red;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+   
+   
+}
+
+.searching
+{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.serach-description
+{
+    padding-bottom: 30px;
+}
+
+#searchPlace
+{
+    width: 80%;
+    padding: 15px;
+}
+
+.search-button
+{
+    width: 7%;
+    padding: 15px;
+    color: white;
+    background-color: rgb(132, 188, 0);
+    border-radius: 10px;
+}
+
+.destination-header
+{
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.destination-content
+{
+    width: 80%;
+    background-color: white;
+    background-size:contain;
+    gap: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.destination-card
+{
+    width: 30%;
+    text-align: center;
+}
+
+.destination-card table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.destination-card
+{
+    border-top: 4px solid rgb(132, 188, 0);
+    border-bottom: 4px solid rgb(132, 188, 0);
+    border-right: 4px solid gray;
+    width: fit-content;
+    margin-bottom: 60px;
+}
+
+.destination-button
+{
+    width: 100%;
+    height: 7%;
+     border-top: 4px solid gray;
+    border-bottom: 4px solid rgb(132, 188, 0);
+}
+
+.travel-tabel
+{
+    
+    text-align: center;
+}
+
+.styled-table
+{
+    
+    justify-content: space-between;
+    width: 100%;
+    
+
+    
+}
+
+.travel-table-header
+{
+    background-color: rgb(132, 188, 0);
+    border-radius: 80%;
+    
+}
+
+.travel-table-header tr
+{
+     background-color: rgb(132, 188, 0);
+    border-radius: 20px;
+    height: 40px;
+    color: white;
+    
+}
+
+.travel-table-header tr th
+{
+   background-color: rgb(132, 188, 0);
+
+ 
+    height: 60px;
+    width: fit-content;
+    color: white;
+}
+
+.destination-content 
+{
+    width: 75%;
+    flex-wrap: wrap;
+    gap: 7%;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css"  href="dialog/fit-dialog.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <div class="logo">
+          <img src="images/logo.png" />
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li id="home">Home</li>
+            <li>About</li>
+            <li>Destination</li>
+            <li>City</li>
+            <li>Pages</li>
+            <li>Contact</li>
+          </ul>
+          <p class="register-button">Register</p>
+        </div>
+      </div>
+      <div class="header-content">
+        <div class="header-description">
+          <h1>Travel buddy</h1>
+          <p>
+            Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet
+            dolor sed justo kasd.
+          </p>
+          <div class="get-started-button">Get Started Now</div>
+        </div>
+        <div class="header-image">
+          <img src="images/suitcases.png" />
+        </div>
+      </div>
+    </div>
+    <div class="separator">
+      <div class="line-black"></div>
+      <div class="line-green"></div>
+      <div class="line-black"></div>
+    </div>
+    <div class="searching">
+      <div class="serach-description">
+        <h1>Search Your Destination</h1>
+        <p>
+          Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet
+          ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit
+          clita.
+        </p>
+      </div>
+      <div class="separator">
+        <div class="line-black"></div>
+        <div class="line-green"></div>
+        <div class="line-black"></div>
+      </div>
+      <div class="search-bar">
+        <input id="searchPlace" placeholder="Insert destination name.." />
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+    <div class="destination">
+      <div class="destination-header">
+        <h1>Our Destination Plans</h1>
+        <p>
+          Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet
+          ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit
+          clita.
+        </p>
+        <div class="separator">
+          <div class="line-black"></div>
+          <div class="line-green"></div>
+          <div class="line-black"></div>
+        </div>
+      </div>
+      <div class="destination-content" id ="destinacije">
+      </div>
+    </div>
+    <div class="travel-tabel">
+      <div class="separator">
+        <div class="line-black"></div>
+        <div class="line-green"></div>
+        <div class="line-black"></div>
+      </div>
+      <div class="travel-header">
+        <h1>Our Travel Plans</h1>
+        <p>
+          Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet
+          ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit
+          clita.
+        </p>
+        <div class="separator">
+          <div class="line-black"></div>
+          <div class="line-green"></div>
+          <div class="line-black"></div>
+        </div>
+      </div>
+      <table class="styled-table">
+        <thead class="travel-table-header">
+          <tr>
+            <th>Putovanje ID</th>
+            <th>Polazak</th>
+            <th>Povratak</th>
+            <th>Broj dana</th>
+            <th>Broj slobodnih mjesta</th>
+            <th>Cijena</th>
+            <th>Odaberi</th>
+          </tr>
+        </thead>
+        <tbody id="putovanjaTabela">
+        </tbody>
+      </table>
+    </div>
+    <div class="city-weather">
+      <div class="city-weather-wrapper">
+        <div class="separator">
+          <div class="line-black"></div>
+          <div class="line-green"></div>
+          <div class="line-black"></div>
+        </div>
+        <div class="city-weather-header">
+          <h1>Our Cities Itinerary</h1>
+          <p>
+            Vero justo sed sed vero clita amet. Et justo vero sea diam elitr
+            amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero
+            elitr sit clita.
+          </p>
+          <div class="separator">
+            <div class="line-black"></div>
+            <div class="line-green"></div>
+            <div class="line-black"></div>
+          </div>
+        </div>
+        <div class="city-card-wrapper" id="vrijemeGradova">
+        </div>
+      </div>
+    </div>
+
+    <div class="conact">
+      <div class="separator">
+        <div class="line-black"></div>
+        <div class="line-green"></div>
+        <div class="line-black"></div>
+      </div>
+      <div class="booking-header">
+        <h1>Book your destination</h1>
+        <div class="separator">
+          <div class="line-black"></div>
+          <div class="line-green"></div>
+          <div class="line-black"></div>
+        </div>
+      </div>
+      <div id="contact-form">
+        <div class="container2">
+          <div class="item">
+            <label for="drzavaText">Drzava</label>
+            <input type="text" id="drzavaText" disabled />
+          </div>
+          <div class="item">
+            <label for="datumPolaska">Datum polaska</label>
+            <input type="text" id="datumPolaska" disabled />
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="container2">
+          <div class="item">
+            <label class="bold" for="brojGostiju">Broj gostiju</label>
+            <input
+              type="number"
+              id="brojGostiju"
+              value="1"
+              min="1"
+              max="5"
+              oninput="promjenaBrojaGostiju()"
+            />
+          </div>
+          <div class="item">
+            <label for="cijenaPoGostu">Cijena po gostu</label>
+            <input type="text" id="cijenaPoGostu" disabled />
+          </div>
+        </div>
+
+        <div class="container2">
+          <div class="item"></div>
+          <div class="item">
+            <label class="bold" for="ukupnaCijena">Sumarno za sve goste</label>
+            <input type="text" id="ukupnaCijena" disabled />
+          </div>
+        </div>
+        <hr />
+        <div id="gosti">
+        </div>
+        <br />
+        <br />
+        <div class="container3">
+          <div class="item-container">
+            <div class="item">
+              <label for="brojIndeksa">Broj indeksa</label>
+              <input id="brojIndeksa" oninput="provjeriBrojIndeksa()" />
+            </div>
+            <div class="item">
+              <label for="phone">Broj telefona</label>
+              <input id="phone" oninput="provjeriTelefon()" />
+            </div>
+          </div>
+          <div class="item-container">
+            <div class="item">
+              <label for="email">E-mail</label>
+              <input id="email" oninput="provjeriEmail()" />
+            </div>
+            <div class="item">
+              <label for="datumVazenjaPasosa">Datum važenja pasoša</label>
+              <input id="datumVazenjaPasosa" oninput="provjeriDatumPasos()" />
+            </div>
+          </div>
+        </div>
+
+        <button class="button" onclick="posalji()">Send</button>
+      </div>
+    </div>
+    <script src="dialog/fit-dialog.js"></script>
+    <script src="propeler.js"></script>
+    <script src="termometar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
