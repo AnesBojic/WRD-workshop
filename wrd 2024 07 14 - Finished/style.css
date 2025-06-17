@@ -399,3 +399,9 @@ background-color: white;
     flex-wrap: wrap;
     gap: 7%;
 }
+
+.destination-img
+{
+    width: 100%;
+    
+}

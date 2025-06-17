@@ -276,6 +276,8 @@ let promjenaBrojaGostiju = () => {
        
         gosti.innerHTML +=`<label for="gostiInput${i+1}">Ime gosta ${i+1}</label>
                            <input type="text" id="gostiInput${i+1}">`;
+
+                            ukupnaCijena.value = cijenaPoGostu.value * brojGostiju.value;
     }
 
 }
