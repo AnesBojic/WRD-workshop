@@ -1,0 +1,13 @@
+napomena za zadatak oko weather api - zbog blokiranog interneta u učionici.
+
+Ipravka adrese za fetch podataka o prognozi
+	
+		
+u js-u umjesto
+fetch(`http://api.openweathermap.org/data/2.5/weather?q=${o.nazivGrada}&appid=917b026a997320574cd4315b9bf4c73a`)
+	
+stavite
+fetch(`https://wrd-fit.info/api/Weather/${o.nazivGrada}`)
+
+gratis vrijeme:
+10 min
